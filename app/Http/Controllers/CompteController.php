@@ -16,7 +16,7 @@ class CompteController extends Controller
     
     public function create()
     {
-        return view('/layouts/create');
+        return view('/layouts/Creation/create');
     }
 
     public function store(Request $request)

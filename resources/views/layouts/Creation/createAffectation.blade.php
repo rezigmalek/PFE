@@ -12,21 +12,25 @@
 <body>
 <div class="container mt-2">
     <hr>
-    <h2>Ajouter compte</h2>
+    <h2>Ajouter Affectation</h2>
     <hr>
-  <form action="{{ route('store') }}" method="POST">
+  <form action="{{ route('affectation.store') }}" method="POST">
     @csrf 
     <div class="form-group">
-        <label>Utilisateur</label>
-        <input type="text" class="form-control" name="utilisateur" autocomplete="off">
+        <label>Nom</label>
+        <input type="text" class="form-control" name="nom" autocomplete="off">
     </div>
     <div class="form-group">
-        <label>Password</label>
-        <input type="password" class="form-control" name="password" autocomplete="off">
+        <label>Type</label>
+        <input type="password" class="form-control" name="type" autocomplete="off">
     </div>
     <div class="form-group">
-        <label>Type de compte</label>
-        <input type="text" class="form-control" name="type_compte" autocomplete="off">
+        <label>Quota projet fin d'étude</label>
+        <input type="text" class="form-control" name="quota_pfe" autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label>Quota immersion</label>
+        <input type="text" class="form-control" name="quota_im" autocomplete="off">
     </div>
     <div class="form-group">
         <label>ID école</label>
@@ -39,6 +43,3 @@
 </div>
 </body>
 </html>
-
-
-

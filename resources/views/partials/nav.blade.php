@@ -14,19 +14,19 @@
                 <a href="" class="nav-link active text-white">Gérer les écoles</a>
             </li>
             <li class="nav-item nav-link">
-                <a href="" class="nav-link text-white">Gérer les directions </a>
+                <a href="{{ route ('affectation.index') }}" class="nav-link text-white">Gérer les directions </a>
             </li>
             <li class="nav-item nav-link">
-                <a href="{{ route('departement.index') }}" class="nav-link text-white">Gérer les départements</a>
+                <a href="{{ route ('affectation.index') }}" class="nav-link text-white">Gérer les départements</a>
             </li>
             <li class="nav-item nav-link">
-                <a href="" class="nav-link text-white">Gérer les encadrants</a>
+                <a href="{{ route ('encadrant.index') }}" class="nav-link text-white">Gérer les encadrants</a>
             </li>
             <li class="nav-item nav-link">
                 <a href="" class="nav-link text-white">Gérer les universités</a>
             </li>
             <li class="nav-item nav-link">
-                <a href="{{ route('compte.index') }}" class="nav-link text-white">Gérer les comptes</a>
+                <a href="{{ route ('compte.index') }}" class="nav-link text-white">Gérer les comptes</a>
             </li>
             <li class="nav-item nav-link">
                 <a href="" class="nav-link text-white">Consulter les Statistiques</a>
