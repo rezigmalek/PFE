@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CompteController;
 use App\Http\Controllers\AffectationController;
 use App\Http\Controllers\EncadrantController;
+use App\Http\Controllers\UniversiteController;
+use App\Http\Controllers\EcoleController;
 
 
 
@@ -26,6 +28,16 @@ Route::get('encadrant',[EncadrantController::class,'index'])->name('encadrant.in
 
 Route::get('/encadrant/create',[EncadrantController::class,'create'])->name('encadrant.create');
 Route::post('/encadrant/store',[EncadrantController::class,'store'])->name('encadrant.store');
+
+Route::get('universite',[UniversiteController::class,'index'])->name('universite.index');
+
+Route::get('/universite/create',[UniversiteController::class,'create'])->name('universite.create');
+Route::post('/universite/store',[UniversiteController::class,'store'])->name('universite.store');
+
+Route::get('ecole',[ecoleController::class,'index'])->name('ecole.index');
+
+Route::get('/ecole/create',[ecoleController::class,'create'])->name('ecole.create');
+Route::post('/ecole/store',[ecoleController::class,'store'])->name('ecole.store');
 
 
 
