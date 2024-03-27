@@ -1,7 +1,7 @@
 @include('partials.nav')
 <div class="container mt-2">
 <hr>
-    <h2>Tous les encadrants</h2>
+    <h2>Tous les Encadrants</h2>
 <hr>
 <table class="table">
     <tr>
@@ -9,7 +9,7 @@
         <th>Nom</th>
         <th>Prenom</th>
         <th>Matricule</th>
-        <th>email</th>
+        <th>Email</th>
         <th>ID département</th>
     </tr>    
 @foreach ($encadrants as $encadrant)

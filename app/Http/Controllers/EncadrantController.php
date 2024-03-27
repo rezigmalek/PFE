@@ -19,27 +19,26 @@ class EncadrantController extends Controller
     }
     public function store(Request $request){
 
-        
-
         $nom = $request->nom;
         $prenom = $request->prenom;
         $matricule = $request->matricule;
         $email = $request->email;
         $structure_affectation_id = $request->structure_affectation_id;
 
-
-
+        //validation
+        $request->validate([
+            'nom'=>'required'
+        ]);
 
         //insertion
         encadrant::create([
             'nom' => $nom,
             'prenom' => $prenom,
             'matricule' => $matricule,
-            'email' => $email,
-            'structure_affectation_id' => $structure_affectation_id,
+            'email' => $email, 
+            'structure_affectation_id' => $structure_affectation_id,     
         ]);
         
         return redirect()->route('encadrant.index');
-     
     }
 }

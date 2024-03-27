@@ -33,7 +33,7 @@
         <input type="text" class="form-control" name="email" autocomplete="off">
     </div>
     <div class="form-group">
-        <label>ID Direction ou département</label>
+        <label>ID Département</label>
         <input type="text" class="form-control" name="structure_affectation_id" autocomplete="off">
     </div>
     <div class="form-group">

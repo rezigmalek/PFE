@@ -14,6 +14,6 @@ class encadrant extends Model
         'prenom',
         'matricule',
         'email',
-        'structure_affectation_id '
+        'structure_affectation_id'
     ];
 }
